@@ -1,0 +1,161 @@
+@charset "UTF-8"; /* essa linha é necessária em todo novo arquivo CSS para não dar erro na linha */
+
+#CONTEINER{ /* essa é a chamada do id da caixa principal */
+    width: 100%;
+    height: auto; /* auto permite que o tamanho aumente de acordo como conteúdo */
+    margin: auto; /* centraliza o conteiner na tela do navegador */
+
+}
+
+#TOPO{
+    background-color: rgb(236, 101, 169);
+    width: 100%;
+    height: 50px;
+}
+
+
+
+.bannerHover{
+    width: 100%;
+    height: 700px;
+    background-image: url('../Imagens/Banner_index1.png'); /* imagem inicial */
+    background-size: cover; /* ajusta o tamanho da imagem do fundo para garantir que ela cubra
+    completamente o elemento, mesmo que isso signifique cortar partes */
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+    .bannerHover:hover{
+        background-image: url('../Imagens/Banner_index2.png'); /* imagem ao passar o mouse */
+    }
+
+
+#BANNER_LATERAL{
+    display: block; /* a div se torna um bloco e pode ser direcionado para qualquer lado */
+    float: left;
+    width: 50%;
+    height: 425px;
+}
+
+/* classe para banner lateral */
+.tamanhoBannerLateral{
+    width: 100%;
+    height: 425px;
+
+}
+
+#TEXTO{
+    display: block; /* a div se torna um bloco e pode ser direcionado para qualquer lado */
+    float: right;
+    width: 50%;
+    height: 425px;
+
+}
+
+h1{
+    color: #491350;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: #29032e;
+    text-align: center;
+
+}
+
+p{
+    text-align: justify;
+    line-height: 1.1;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    padding-right: 5%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    clear: both; /* essa propriedade garante que esta caixa ficará no rodapé da página */
+    background-color: rgba(160, 118, 151, 0.699);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+/* Menu */
+
+nav{ /* formatando a parte navegável */
+    width: 100%;
+    height: 48px;
+    background-color: #491350;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul{ /* formatando a lista que está dentro do NAV */
+    list-style: none; /* retirando as bolinhas da lista */
+    margin: 0;
+    padding: 0;
+    float: right; /*  flutuando a lista para a direita */
+}
+
+nav ul li{
+    float: left; /* a ordem de chegada dos botões/itens - desta forma mantem da forma como foi inserido */
+}
+
+nav ul li a{ /* propriedades do LINK */
+    color: #ffffff;
+    text-decoration: none; /* none desativa a linha de sublinhado que é característica do link */
+    padding: 15px;
+    display: block; /* transformar em blocos para movimentar na página */
+}
+
+nav ul li a:hover{ /* evento quando PASSAR o mouse no LINK */
+    background-color: rgb(219, 136, 136);
+    transition: all .5s; /* tempo de efeito de transição */
+    border-radius: 10px;
+}
+
+
+/* CSS da página SERVIÇOS */
+
+#card1{
+    display: block; /* transforma em bloco para poder alterar a localização na página */
+    float: left; /* para deslocar as caixas */
+    width: 29.3%;
+    height: 200px;
+    background-color: #b4afb4;
+    margin: 1%; /* distância entre as caixas */
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.imgServicos{
+    width: 85%;
+    border-radius: 10px;
+   
+}
+
+.texto{
+    width: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  
+}
+
+/* animação do banner - ZOOM NAS IMAGENS - NÃO UTILIZADO */
+.zoom{
+    transition: transform 0.3s ease;  suavisa o efeito 
+}
+
+    .zoom:hover{
+        transform: scale(1.2);  aumenta 20% 
+    }
+
+

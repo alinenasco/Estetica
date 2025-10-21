@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Contato.css">
+</head>
+<body>
+    
+    <div id="CONTEINER"> <!-- DIV PRINCIPAL QUE TERÁ OUTRAS DENTRO DELA-->
+       
+        <div id="TOPO"> 
+            <nav> 
+                <ul>
+                    <li> <a href="Index.html"> BELLA </a> </li>
+                    <li> <a href="Servicos.html"> SERVIÇOS </a> </li>
+                    <li> <a href="Formulario.html"> CONTATO </a> </li> 
+                </ul>
+               
+            </nav>
+        </div>
+
+      <div id="conteudo_formulario">
+            <form method="post" id="fContato" action="email@gmail.com">
+                <!-- método post envia dados
+                 método GET para a pesquisa
+                  -->
+        <fieldset id="dadosPessoais"> <!-- Bloco/conjunto de dados -->
+            <legend> Dados pessoais </legend> <!-- Nome do conjunto -->
+    
+        <p>        
+        <label for="cNome"> Nome </label> <br>
+        <input type="text" name="tNome" id="cNome" size="20" maxlength="20" placeholder="Digite seu nome aqui" autofocus required />
+        </p>
+
+        <p>        
+        <label for="cMail"> E-mail </label> <br>
+        <input type="email" name="tMail" id="cMail" size="30" maxlength="30" placeholder="Ex.: exemplo@mail.com" required />
+        </p>
+
+        <p>        
+        <label for="cNasc"> Data de Nascimento: </label> <br>
+        <input type="date" name="tNasc" id="cNasc" />
+        </p>
+        <!-- Type date pode não abri o calendário caso o navegador não esteja atualizado -->
+        </fieldset>
+
+        <p>        
+        <label for="cRua"> Endereço </label> <br>
+        <input type="text" name="tRua" id="cRua" size="30" maxlength="50" placeholder="Rua, Av., Trav.,... " required />
+        </p>
+
+        <p>        
+        <label for="cMsg"> Mensagem </label> <br>
+        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui a sua mensagem" required></textarea>
+        </p>
+
+        <!-- label = rótulo que virá antes da caixa de preenchimento
+         input = caixa que o usuário preencherá os dados
+         type é o tipo de dado que a caixa poderá receber
+         name é o nome da caixa para ser validada por uma linguagem
+         id para formatar no CSS
+         maxlength é a quantidade de caracteres que poderá ser digitada na caixa
+         autofocus = o cursor ficará dentro da caixa inicialmente
+         required = esta caixa deverá ser preenchida para enviar os dados -->
+        
+        <div id="botoes" >
+            <input type="submit" name="Enviar" class="botoes" />
+            <!-- type SUBMIT para botão e Name ou value Enviar é o texto que virá sobre o botão -->
+        </div>
+        
+        <div id="limpForm">
+            <input type="reset" name="Limpar" value="Limpar" class="limpForm" />
+        </div>
+
+        </form>
+      </div>
+    
+    
+        <footer>
+            Todos os direitos reservados - 2025
+        </footer>
+
+    </div>
+
+
+</body>
+</html>
